@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <style>
+    body{
+      padding:0;
+      margin:0;
+    }
+    section{
+      display:table;
+      width:100vw;
+      height:100vh;
+      background:repeating-linear-gradient(-30deg,#3e3c30,#3e3c30 3px,#3e3c30 2px,#22362a 6px);
+    }
+    section .wrapper{
+      display:table-cell;
+      vertical-align:middle;
+    }
+    section .wrapper .wrapper-content{
+      width:350px;
+      height:auto;
+      margin:0 auto;
+    }
+    section .wrapper img{
+      width:100%;
+    }
+    section .wrapper h4{
+      color:#fff;
+      text-align:center;
+      margin:20px 0 20px 0;
+    }
+    section .wrapper h1{
+      font-family:Tungsten-Medium,Impact, Charcoal;
+      color:#fff;
+      text-align:center;
+      margin:10px 0 10px 0;
+    }
+    .line{
+      border-bottom:2px solid #d95131;
+      width:50px;
+      text-align:center;
+      display:block;
+      margin:0 auto;
+    }
+    .landingPageBtn{
+      box-sizing:border-box;
+      border-width:2px;
+      width:80%;
+      cursor:pointer;
+      font-family:Georgia;
+      margin-top:10px;
+      display:block;
+      margin:0 auto;
+      margin-top: 25px;
+      padding:7px;
+      font-size:14px;
+    }
+    @media screen and (max-width: 568px){
+      section .wrapper{
+        vertical-align:top;
+      }
+      section .wrapper .wrapper-content{
+        width:100%;
+        padding:15px;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <div class="wrapper">
+      <div class="wrapper-content">
+      <img src="assets/img/landingPageLogo.png" alt="Goalz LLC logo">
+      <h4>Website coming soon!</h4>
+      <div class="line"></div>
+      <h1>We're hiring!<br>All levels all positions.</h1>
+      <div class="line"></div>
+      <a href="https://goalzllc.isolvedhire.com" target="_blank">
+        <button type="button" class="btn btn-default landingPageBtn">
+          Apply now
+        </button>
+      </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
