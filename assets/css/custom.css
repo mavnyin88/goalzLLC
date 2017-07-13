@@ -327,6 +327,7 @@ a.navbar-brand{
 	font-family:"Tungsten-Medium";
 	color:#EE453B;
 	margin-bottom:30px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #section-2 .row .col-sm-4 h4{
 	margin-bottom:15px;
@@ -364,6 +365,7 @@ a.navbar-brand{
 	margin-bottom:10px;
 	color:#fff;
 	font-size:55px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 /* section 4 */
 
@@ -374,6 +376,7 @@ a.navbar-brand{
 	font-family: "Tungsten-Medium";
 	color:#F5EB9E;
 	margin-bottom: 30px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #section-4 .row .col-sm-4 h4{
 	margin-bottom:20px;
@@ -601,6 +604,7 @@ a:hover{
 	font-family:Tungsten-Medium;
 	font-size:55px;
 	color:#fff;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #doghaus-map-location .row{
 	padding-top:0;
@@ -645,6 +649,7 @@ a:hover{
 	font-family:Tungsten-Medium;
 	font-size:55px;
 	color:#fff;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #about_captain_ds .row .col-sm-6 h4, #about_captain_ds .row .col-xs-12 h4{
 	margin-top:-2px;
@@ -694,6 +699,7 @@ a:hover{
 	font-family:Tungsten-Medium;
 	font-size:55px;
 	padding-left:15px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #about_churchs .row .col-sm-6 h4, #about_churchs .row .col-xs-12 h4{
 	margin-top:-2px;
@@ -739,6 +745,7 @@ a:hover{
 	font-family:Tungsten-Medium;
 	color:#fff;
 	font-size:55px;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #were-hiring .row .col-sm-12 h2{
 	margin-bottom:20px;
@@ -756,8 +763,11 @@ a:hover{
 }
 /* Contact */
 #get-in-touch{
-	width:100%;
+	height:400px;
 	background:#EE453B;
+	background-image: url('../img/dh-emp.jpg');
+	background-size: cover;
+	/*background-position: center center;*/
 	margin-top:100px;
 }
 #get-in-touch{
@@ -767,14 +777,14 @@ a:hover{
 	font-family:Tungsten-Medium;
 	font-size:55px;
 	color:#fff;
-	background-color: #EE453B;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 	margin-bottom:0;
 	margin-top:0;
 }
 #vendors .row{
-	background:#EE453B;
-	color:#fff;
-	background-image: url('../img/pattern.png');
+	/*background:#EE453B;*/
+	/*color:#fff;*/
+	/*background-image: url('../img/pattern.png');*/
 	background-size: cover;
 	background-position: center center;
 }
@@ -782,13 +792,31 @@ a:hover{
 	margin-bottom: 50px;
 }
 #vendor-logos .row .col-sm-4 img{
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+
 }
 #vendor-logos .row .col-sm-4 img:nth-child(1){
 	padding-left:0;
-	padding-right:60px;
+	padding-right:100px;
 }
 #vendor-logos .row .col-sm-4 img:nth-child(4){
 	padding-right:0;
+}
+
+/* Media */
+#goalz-in-news{
+	width:100%;
+	height:400px;
+	background:#ccc;
+	background-image: url('../img/Dog-Haus_food-hero.jpg');
+	background-size: cover;
+	/*background-position: center center;*/
+	margin-top:100px;
+}
+#goalz-in-news .row h1{
+	font-family:Tungsten-Medium;
+	font-size:55px;
+	color:#fff;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
+	margin-bottom:0;
+	margin-top:0;
 }
