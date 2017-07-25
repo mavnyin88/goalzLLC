@@ -5,13 +5,15 @@
 /* Basic styles */
 body{
 	font-family:Georgia, serif;
-	font-size: 16px;
+	color:#3e3c30;
+	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
 }
 .container-fluid{
 	padding-left:0;
 	padding-right:0;
+	margin-top:20px;
 }
 .row{
 	padding-left:0;
@@ -20,7 +22,7 @@ body{
 	margin-left:0;
 }
 .row{
-	padding:50px 11% 50px 11%;
+	padding:70px 11% 70px 11%;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-sm-1,
 .col-xs-2, .col-sm-2, .col-md-2, .col-sm-2,
@@ -58,7 +60,7 @@ h4{
 	font-size: 18px;
 }
 p{
-	font-size:14px;
+	font-size:16px;
 	font-weight:normal;
 }
 p.lead{
@@ -118,7 +120,7 @@ button,input,.btn,a.btn{
 	font-weight: bold;
 }
 .btn-danger{
-	background-color: #dd5638;
+	background-color:#dd5638;
 	border-color:#d95131;
 }
 img{
@@ -167,6 +169,9 @@ li{
 }
 
 /*Custom bootstrap navbar */
+.navbar{
+	margin-bottom:0;
+}
 .navbar-inverse{
 	background:#3e3c30;
 	background-color:#3e3c30;
@@ -189,6 +194,10 @@ li{
 .navbar-inverse .navbar-nav>li>a:hover{
 	color:#EE453B;
 }
+.navbar-wrapper .row{
+	padding-top:0;
+	padding-bottom:0;
+}
 .navbar-wrapper .navbar-inverse{
 	box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
@@ -199,6 +208,10 @@ a.navbar-brand{
 	/*height:51px;*/
 	padding:0;
 	padding-left:15px;
+}
+.navbar-brand img{
+	min-width:190px;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.3);
 }
 .navbar-inverse .navbar-nav>.active>a{
 	background-color:transparent;
@@ -248,6 +261,9 @@ a.navbar-brand{
 	background-color:transparent;
 	color:#ef463b;
 }
+.dropdown:hover .dropdown-menu {
+display: block;
+}
 .navbar-right .dropdown-menu{
 	right:0;
 	left:10px;
@@ -258,20 +274,20 @@ a.navbar-brand{
 
 /*Custom bootsrap carousel*/
 .carousel{
-	margin-top:100px;
+	margin-top:80px;
 	min-width:100%;
 }
 .carousel-indicators li{
 	border-radius:0;
 	background-color:#fff;
-	width:15px;
-	height:15px;
+	width:20px;
+	height:20px;
 }
 .carousel-indicators .active {
   background-color: #ef463b;
-  border: 1px solid #f6eb9e;
-	width:17px;
-	height:17px;
+  border: 2px solid #f6eb9e;
+	width:23px;
+	height:23px;
 }
 .carousel-caption{
 	top:10%;
@@ -284,21 +300,25 @@ a.navbar-brand{
 	font-family:"Tungsten-Medium";
 	text-align:left;
 	margin:0;
+	margin-bottom:20px;
+	margin-top:10px;
 	letter-spacing:3px;
-	font-size:55px;
+	font-size:65px;
 }
 
 /* Custom bootsrap btn */
+.home-page-btn{
+	width:190px;
+}
 .btn{
 	border-radius:0;
 	font-weight:normal;
-	padding-left:20px;
-	padding-right:20px;
+	padding:10px 20px 10px 20px;
 }
 .btn-default{
 	background-color:#EE453B;
 	border-color:#F5EB9E;
-	border-width:2px;
+	border-width:3px;
 	-webkit-transition: 0.23s ease-in-out;
 	-o-transition: 0.23s ease-in-out;
 	transition: 0.23s ease-in-out;
@@ -309,7 +329,6 @@ a.navbar-brand{
 .btn-default:hover{
 	background-color:#EE453B;
 	border-color:#F5EB9E;
-	color:pink;
 }
 .btn-default:visited{
 	background-color:#EE453B;
@@ -321,6 +340,17 @@ a.navbar-brand{
 	background-color: #EE453B;
 	border-color: #F5EB9E;
 }
+
+
+
+#section-1 .row{
+	padding:0;
+}
+#section-1 .row img{
+	min-width:100%;
+}
+
+
 
 /* section 2 homepage */
 #section-2 .row{
@@ -413,6 +443,9 @@ footer{
 	  #22362a 6px
 		);
 }
+footer .container-fluid{
+	margin-top:0;
+}
 footer .container-fluid .row .col-sm-2{
 	padding-right:40px;
 }
@@ -496,14 +529,14 @@ section#section-2 .row .col-sm-4 .overFlow img:hover, section#section-4 .row .co
 /* iphone 5 and up */
 @media screen and (max-width: 568px){
 	.row{
-
+		padding:50px 15px 50px 15px;
 	}
 
 }
-@media screen and (min-width: 768px)
-bootstrap.min.css:5
-.carousel-caption {
+@media screen and (min-width: 768px){
+
 }
+
 
 
 
@@ -553,7 +586,7 @@ a:hover{
 
 /* About us */
 #about-name{
-	margin:100px 0 0 0;
+	margin:80px 0 0 0;
 }
 #about-name .row .col-sm-6 h4, #about-name .row .col-xs-12 h4{
 	margin-top:-2px;
@@ -563,6 +596,10 @@ a:hover{
 	margin-top:0;
 	margin-bottom:20px;
 	width:310px;
+	color:#EE453B;
+}
+#about-name img{
+	box-shadow:2px 2px 4px rgba(0,0,0,0.3);
 }
 #goal-and-mantra{
 	background:#EE453B;
@@ -582,6 +619,21 @@ a:hover{
 #national-team{
 	background-color: #F5EB9E;
 }
+#national-team h1{
+	font-family:"Tungsten-Medium", Impact;
+	color:#EE453B;
+	margin-bottom:20px;
+	margin-top:0;
+}
+#national-team .row .col-sm-6 img{
+	border:10px solid #fff;
+	box-shadow:2px 2px 4px rgba(0,0,0,0.3);
+	filter:grayscale(30%);
+}
+#team-accordion{
+	background-color: #F5EB9E;
+}
+
 /* Dog Hause Page */
 #dog_haus_hero {
 	width:100%;
@@ -591,7 +643,7 @@ a:hover{
 	background-image: url('../img/dog-haus-clucka-hero.jpg');
 	background-size: cover;
 	background-position: center center;
-	margin-top:100px;
+	margin-top:80px;
 }
 #about_dog_haus .row .col-sm-6 h4, #about_captain_ds .row .col-xs-12 h4{
 	margin-top:-2px;
@@ -644,7 +696,7 @@ a:hover{
 	background-image: url('../img/captain_ds_hero.jpg');
 	background-size: cover;
 	background-position: center center;
-	margin-top:100px;
+	margin-top:80px;
 }
 #captain_d_hero .row h1{
 	font-family:Tungsten-Medium;
@@ -689,17 +741,17 @@ a:hover{
 /* Churchs Chicken */
 #churchs_hero{
 	width:100%;
-	height:400px;
+	height:500px;
 	background:#ccc;
 	background-image: url('../img/churchs-hero.jpg');
 	background-size: cover;
 	background-position: center center;
-	margin-top:100px;
+	margin-top:80px;
 }
 #churchs_hero .row h1{
 	font-family:Tungsten-Medium;
-	font-size:55px;
-	padding-left:15px;
+	font-size:65px;
+	margin-top:20px;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #about_churchs .row .col-sm-6 h4, #about_churchs .row .col-xs-12 h4{
@@ -735,17 +787,18 @@ a:hover{
 }
 /* Join the family */
 #join-the-family{
-	height:400px;
+	height:500px;
 	background:#EE453B;
 	background-image: url('../img/doghaus-empoyees_v2.jpg');
 	background-size: cover;
 	background-position: center center;
-	margin-top:100px;
+	margin-top:80px;
 }
 #join-the-family .row h1{
 	font-family:Tungsten-Medium;
 	color:#fff;
-	font-size:55px;
+	font-size:65px;
+	margin-top:10px;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #were-hiring .row .col-sm-12 h2{
@@ -762,23 +815,26 @@ a:hover{
 	background-size: cover;
 	background-position: center center;
 }
+#send-video{
+	background-color:#F5EB9E;
+}
 /* Contact */
 #get-in-touch{
-	height:400px;
+	height:auto;
 	background:#EE453B;
-	background-image: url('../img/dh-emp.jpg');
+	/*background-image: url('../img/food-collage.jpg');*/
 	background-size: cover;
-	/*background-position: center center;*/
-	margin-top:100px;
+	background-position: center center;
+	margin-top:80px;
 }
 #get-in-touch{
 	padding-bottom:0;
 }
 #get-in-touch .row h1{
 	font-family:Tungsten-Medium;
-	font-size:55px;
+	font-size:65px;
 	color:#fff;
-	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
+	text-shadow:-2px 2px 2px rgba(0,0,0,0.5);
 	margin-bottom:0;
 	margin-top:0;
 }
@@ -802,22 +858,28 @@ a:hover{
 #vendor-logos .row .col-sm-4 img:nth-child(4){
 	padding-right:0;
 }
+#contact{
+	/*background-color:#F5EB9E;*/
+}
+#send-us-a-message{
+
+}
+#email-signup{
+	background-color:#EE453B;
+	color:#fff;
+}
 
 /* Media */
 #goalz-in-news{
 	width:100%;
-	height:400px;
-	background:#ccc;
-	background-image: url('../img/Dog-Haus_food-hero.jpg');
+	background:#F5EB9E;
 	background-size: cover;
 	/*background-position: center center;*/
-	margin-top:100px;
+	margin-top:80px;
 }
 #goalz-in-news .row h1{
 	font-family:Tungsten-Medium;
-	font-size:55px;
-	color:#fff;
-	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
+	font-size:65px;
 	margin-bottom:0;
 	margin-top:0;
 }
