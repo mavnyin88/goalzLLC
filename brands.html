@@ -51,7 +51,7 @@
                 </li>
                 <li><a href="jointhefamily.html">Join the family</a></li>
                 <li class="dropdown">
-                  <a href="contact.html" class="active">
+                  <a href="contact.html">
                     Contact
                   </a>
                   <ul class="dropdown-menu">
@@ -70,66 +70,43 @@
 	</header>
   <div class="clear"></div>
   <div class="container-fluid">
-    <section id="get-in-touch" data-type="background" data-speed="2">
-      <div class="row">
-        <h1 style="float:left;">
-          Let's get <br>
-          in touch
-        </h1>
-
-      </div>
-    </section>
-
-    <section id="vendor-logos">
-      <div class="row" style="padding-bottom:0;">
-        <div class="col-sm-6">
-          <h1 style="margin-top:0;margin-bottom:15px;font-family:Tungsten-Medium,Impact;">
-
-              Vendor
-              Contact
-
-          </h1>
-          <p class="lead" style="margin-bottom:30px;">
-            We work with some talented
-            folks to make Goalz a success.
-            Here are a few of our vendor
-            partners we work with.
-          </p>
+    <section id="our-brands">
+      <div class="row" style="">
+        <h1>We're proud of our brands</h1>
+        <div class="col-sm-4 brands animated">
+          <div class="overFlow">
+            <img src="assets/img/dog_house.jpg" alt="Dog House Card Image">
+          </div>
+            <h4><strong>Dog Haus</strong></h4>
+            <p>The Absolute Wurst. Dog Haus' gourmet all beef skinless hot dogs, hand crafted sausages and premium burgers.</p>
         </div>
-        <div class="col-sm-6">
-
+        <div class="col-sm-4 brands animated">
+          <div class="overFlow">
+            <img src="assets/img/churchs_chicken.jpg" alt="Churchs Chicken Card Image">
+          </div>
+            <h4><strong>Church's Chicken</strong></h4>
+            <p>For more than 60 years Church's has always remained the same. We're still serving the best darn chicken in the world!</p>
+        </div>
+        <div class="col-sm-4 brands animated">
+          <div class="overFlow">
+            <img src="assets/img/captain_ds.jpg" alt="Captain Ds Card Image">
+          </div>
+            <h4><strong>Captains D's</strong></h4>
+            <p>We've had over 40 years to perfect our recipe for success, which combines great food and great value with even better service.</p>
         </div>
       </div>
       <div class="row" style="padding-top:0;">
-        <div class="col-sm-4">
-          <img src="assets/img/diascik-logo.png" alt="Diascik">
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/img/clark-hill-logo.png" alt="Clark Hill">
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/img/granite-logo.png" alt="Granite">
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/img/liqlicense-logo.png" alt="Liquor License">
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/img/tdc-logo.png" alt="TDC">
-        </div>
-        <div class="col-sm-4">
-          <img src="assets/img/virginia-asset-logo.png" alt="Virginia Asset Management">
-        </div>
+        <h1>All of our locations</h1>
+        <div id="map"></div>
       </div>
+
     </section>
-
-
-
-  </div>
-  <footer>
+  </div> <!-- site container -->
+<footer>
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-6 col-sm-2">
-          <p><strong>Info</strong></p>
+          <p><strong>Contact</strong></p>
           <p>
             info@goalzllc.com
           </p>
@@ -182,6 +159,18 @@
     </div>
   </footer>
 <!--JS-->
+<script>
+  function initMap(){
+    var options = {
+      zoom:4,
+      scrollwheel: false,
+      center:{lat:39.8283,lng:-98.5795}
+    }
+    var map = new google.maps.Map(document.getElementById('map'), options);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGL0FZ24T6TZnJsAw17ZZL9oVvdL-XAd8&callback=initMap"
+async defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
