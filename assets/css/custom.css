@@ -5,7 +5,7 @@
 /* Basic styles */
 body{
 	font-family:Georgia, serif;
-	color:#3e3c30;
+	color:#3e3c30 !important;
 	font-size: 18px;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
@@ -192,7 +192,7 @@ li{
 	cursor: pointer;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
-	color:#EE453B;
+	color:#f6eb9e;
 }
 .navbar-wrapper .row{
 	padding-top:0;
@@ -269,7 +269,7 @@ display: block;
 	left:10px;
 }
 .active{
-	font-weight:bold;
+	color:#f6eb9e !important;
 }
 
 /*Custom bootsrap carousel*/
@@ -277,6 +277,7 @@ display: block;
 	margin-top:80px;
 	min-width:100%;
 }
+
 .carousel-indicators li{
 	border-radius:0;
 	background-color:#fff;
@@ -391,6 +392,7 @@ display: block;
 #section-3 .row h3{
 	color:#fff;
 	margin-top:0;
+	margin-bottom:10px;
 }
 #section-3 .row h1{
 	font-family:Tungsten-Medium;
@@ -537,7 +539,29 @@ section#section-2 .row .col-sm-4 .overFlow img:hover, section#section-4 .row .co
 
 }
 
+@media (max-width: 768px){
+  .navbar-collapse .collapse .in{
 
+	 }
+	 .navbar-fixed-top .navbar-collapse{
+		 max-height:100vh !important;
+	 }
+	 .navbar-nav{
+		 margin-top:60px;
+		 height:100vh;
+		 /*padding-bottom:100%;*/
+	 }
+	 .navbar-nav>li>a{
+		 padding-left:20px;
+	 }
+	 .navbar-collapse{
+		 padding-right:0;
+		 padding-left:0;
+	 }
+	 a.navbar-brand{
+		 padding-left:0;
+	 }
+}
 
 
 
@@ -575,6 +599,10 @@ section#section-2 .row .col-sm-4 .overFlow img:hover, section#section-4 .row .co
 	border-radius: 0;
 	cursor: pointer;
 }
+.panel-body p{
+padding:0;
+margin:0;
+}
 a:hover{
 	color:#dd5638;
 }
@@ -587,6 +615,10 @@ a:hover{
 /* About us */
 #about-name{
 	margin:80px 0 0 0;
+	/*background-color: #f6eb9e;*/
+}
+#about-name .row{
+	padding-top:100px;
 }
 #about-name .row .col-sm-6 h4, #about-name .row .col-xs-12 h4{
 	margin-top:-2px;
@@ -667,11 +699,11 @@ a:hover{
 #dog_haus_hero {
 	width:100%;
 	height:auto;
-	height:400px;
+	height:500px;
 	background:#ccc;
-	background-image: url('../img/dog-haus-clucka-hero.jpg');
+	background-image: url('../img/dog-haus-hero_v2.jpg');
 	background-size: cover;
-	background-position: center center;
+	background-position: bottom center;
 	margin-top:80px;
 }
 #about_dog_haus .row .col-sm-6 h4, #about_captain_ds .row .col-xs-12 h4{
@@ -684,7 +716,7 @@ a:hover{
 }
 #dog_haus_hero .row h1{
 	font-family:Tungsten-Medium;
-	font-size:55px;
+	font-size:65px;
 	color:#fff;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
@@ -720,7 +752,7 @@ a:hover{
 /* Captain D's */
 #captain_d_hero{
 	width:100%;
-	height:400px;
+	height:500px;
 	background:#ccc;
 	background-image: url('../img/captain_ds_hero.jpg');
 	background-size: cover;
@@ -729,7 +761,7 @@ a:hover{
 }
 #captain_d_hero .row h1{
 	font-family:Tungsten-Medium;
-	font-size:55px;
+	font-size:65px;
 	color:#fff;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
@@ -828,6 +860,7 @@ a:hover{
 	color:#fff;
 	font-size:65px;
 	margin-top:10px;
+	margin-bottom:20px;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
 #were-hiring .row .col-sm-12 h2{
@@ -848,10 +881,22 @@ a:hover{
 	background-color:#F5EB9E;
 }
 /* Contact */
+#contact .row{
+		/*background-color:#F5EB9E;*/
+	/*background:#EE453B;
+	background-image:url(../img/pattern.png);*/
+	background-size: cover;
+	/*color:#fff;*/
+}
+#contact .row h1{
+	margin-top:0;
+	font-family:Tungsten-Medium,Impact;
+	margin-bottom:20px;
+}
 #get-in-touch{
-	height:auto;
+	height:500px;
 	background:#EE453B;
-	/*background-image: url('../img/food-collage.jpg');*/
+	background-image: url('../img/Lets-keep-in-touch-hero.jpg');
 	background-size: cover;
 	background-position: center center;
 	margin-top:80px;
@@ -862,6 +907,7 @@ a:hover{
 #get-in-touch .row h1{
 	font-family:Tungsten-Medium;
 	font-size:65px;
+	/*margin-bottom:20px;*/
 	color:#fff;
 	text-shadow:-2px 2px 2px rgba(0,0,0,0.5);
 	margin-bottom:0;
@@ -901,13 +947,17 @@ a:hover{
 /* Media */
 #goalz-in-news{
 	width:100%;
-	background:#F5EB9E;
+	/*height:500px;*/
+	background:#EE453B;
+	background-image:url(../img/pattern.png);
+	/*filter:grayscale(1);*/
 	background-size: cover;
 	/*background-position: center center;*/
 	margin-top:80px;
 }
 #goalz-in-news .row h1{
 	font-family:Tungsten-Medium;
+	color:#fff;
 	font-size:65px;
 	margin-bottom:0;
 	margin-top:0;
