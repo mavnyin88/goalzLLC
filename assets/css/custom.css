@@ -148,9 +148,6 @@ input[type="search"],
 textarea{
 	color:#666;
 	border:1px solid #ccc;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
 	display:block;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -629,9 +626,16 @@ a:hover{
 	margin:80px 0 0 0;
 	/*background-color: #f6eb9e;*/
 }
+
 #about-name .row{
 	padding-top:100px;
 }
+#about-name .row h1{
+	font-family:Tungsten-Medium;
+	margin-bottom:10px;
+	margin-top:-7px;
+}
+
 #about-name .row .col-sm-6 h4, #about-name .row .col-xs-12 h4{
 	margin-top:-2px;
 	margin-bottom:15px;
@@ -639,8 +643,8 @@ a:hover{
 #about-name .row .col-sm-6 h2, #about-name .row .col-xs-12 h2{
 	margin-top:0;
 	margin-bottom:20px;
-	width:310px;
-	color:#EE453B;
+	/*width:310px;*/
+	/*color:#EE453B;*/
 }
 #about-name img{
 	box-shadow:2px 2px 4px rgba(0,0,0,0.3);
@@ -681,17 +685,14 @@ a:hover{
 /* Our brands */
 #our-brands{
 	margin-top:80px;
-	background-color:#EE453B;
-	/*background-color:#F5EB9E;*/
+	/*background-color:#EE453B;*/
+	background-color:#F5EB9E;
 }
 #our-brands .row h1{
-	color:#F5EB9E;
+	color:#EE453B;
 	font-family: "Tungsten-Medium";
 	margin-top:20px;
 	margin-bottom: 30px;
-}
-#our-brands .row h4,#our-brands .row p{
-	color:#fff;
 }
 #our-brands .row .col-sm-4 h4{
 	margin-bottom:20px;
@@ -713,6 +714,9 @@ a:hover{
 }
 #our-brands .row .col-sm-4:nth-child(4){
 	padding-left:20px;
+}
+#all-map .row h1{
+	margin-top:0;
 }
 /* Dog Hause Page */
 #dog_haus_hero {
@@ -915,7 +919,6 @@ a:hover{
 	margin-bottom:20px;
 }
 #get-in-touch{
-	height:500px;
 	background:#EE453B;
 	background-image: url('../img/Lets-keep-in-touch-hero.jpg');
 	background-size: cover;
