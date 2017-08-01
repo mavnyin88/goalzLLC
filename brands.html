@@ -22,7 +22,7 @@
   <header class="site-header" role="banner">
 		<!--NAV-->
 		<div class="navbar-wrapper">
-			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar navbar-inverse navbar-fixed-top nav-down" role="navigation">
 				<div class="container-fluid">
           <div class="row">
   					<div class="navbar-header">
@@ -72,25 +72,31 @@
   <div class="clear"></div>
   <div class="container-fluid">
     <section id="our-brands">
-      <div class="row" style="">
+      <div class="row">
         <h1>We're proud of our brands</h1>
         <div class="col-sm-4 brands animated">
           <div class="overFlow">
-            <img src="assets/img/dog_house.jpg" alt="Dog House Card Image">
+            <a href="doghaus.html">
+              <img src="assets/img/dog_house.jpg" alt="Dog House Card Image">
+            </a>
           </div>
             <h4><strong>Dog Haus</strong></h4>
             <p>The Absolute Wurst. Dog Haus' gourmet all beef skinless hot dogs, hand crafted sausages and premium burgers.</p>
         </div>
         <div class="col-sm-4 brands animated">
           <div class="overFlow">
-            <img src="assets/img/churchs_chicken.jpg" alt="Churchs Chicken Card Image">
+            <a href="churchschicken.html">
+              <img src="assets/img/churchs_chicken.jpg" alt="Churchs Chicken Card Image">
+            </a>
           </div>
             <h4><strong>Church's Chicken</strong></h4>
             <p>For more than 60 years Church's has always remained the same. We're still serving the best darn chicken in the world!</p>
         </div>
         <div class="col-sm-4 brands animated">
           <div class="overFlow">
+            <a href="captainds.html">
             <img src="assets/img/captain_ds.jpg" alt="Captain Ds Card Image">
+            </a>
           </div>
             <h4><strong>Captains D's</strong></h4>
             <p>We've had over 40 years to perfect our recipe for success, which combines great food and great value with even better service.</p>
@@ -161,14 +167,139 @@
   </footer>
 <!--JS-->
 <script>
-  function initMap(){
-    var options = {
-      zoom:4,
-      scrollwheel: false,
-      center:{lat:39.8283,lng:-98.5795}
-    }
-    var map = new google.maps.Map(document.getElementById('map'), options);
+function initMap(){
+  var options = {
+    zoom:4,
+    scrollwheel: false,
+    center:{lat:39.8283,lng:-98.5795}
   }
+  // create a new map
+  var map = new google.maps.Map(document.getElementById('map'), options);
+
+  var markers = [
+    {
+      coords:{lat:38.212897,lng:-85.242499},
+      iconImage:'',
+      content:'<h5><strong>Captain D\'s</strong><br />1709 Midland Trail<br />Shelbyville, KY<br />40213</h5>'
+    },
+    {
+      coords:{lat:38.217691,lng:-84.541449},
+      iconImage:'',
+      content:'<h5><strong>Captain D\'s</strong><br />105 Crosswinds Center Path<br />Georgetown, KY<br />40299</h5>'
+    },
+    {
+      coords:{lat:35.148678,lng:-80.925412},
+      iconImage:'',
+      content:'<h5><strong>Captain D\'s</strong><br />7525 South Tryon Street<br />Charlotte, NC<br />28217</h5>'
+    },
+    {
+      coords:{lat:39.844788,lng:-105.051621},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />5100 W 81st Place<br />Westminster, CO<br />80031</h5>'
+    },
+    {
+      coords:{lat:39.514366,lng:-104.774591},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />18581 Twenty Mile Rd<br />Parker, CO<br />80134</h5>'
+    },
+    {
+      coords:{lat:28.139794,lng:-80.671076},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />2015 N Wickham Rd<br />Melbourne, FL<br />32935</h5>'
+    },
+    {
+      coords:{lat:28.826122,lng:-81.888005},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />1105 N 14th St<br />Leesburg, FL<br />34748</h5>'
+    },
+    {
+      coords:{lat:29.058209,lng:-81.300716},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />1601 N Woodland Blvd<br />Deland, FL<br />32720</h5>'
+    },
+    {
+      coords:{lat:38.217691,lng:-84.541449},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />105 Crosswinds Center Path<br />Georgetown, KY<br />40299</h5>'
+    },
+    {
+      coords:{lat:35.148678,lng:-80.925412},
+      iconImage:'',
+      content:'<h5><strong>Churchs Chicken</strong><br />7525 South Tryon Street<br />Charlotte, NC<br />28217</h5>'
+    },
+    {
+      coords:{lat:42.269803,lng:-88.968064},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />7616 Walton St.<br />Rockford, IL<br />61108</h5>'
+    },
+    {
+      coords:{lat:39.698765,lng:-89.0155153},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />4405 US-36<br />Decatur, IL<br />62521</h5>'
+    },
+    {
+      coords:{lat:40.395391,lng:-104.756211},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />Centerplace Drive & 47th Avenue<br />Greeley, CO<br />80634</h5>'
+    },
+    {
+      coords:{lat:40.201843,lng:-105.101799},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />2352 Main Street<br />Longmont, CO<br />80501</h5>'
+    },
+    {
+      coords:{lat:38.221517,lng:-84.541806},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />100 Darby Drive<br />Georgetown, KY<br />40324</h5>'
+    },
+    {
+      coords:{lat:30.440820,lng:-91.008804},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />1920 ONeal Lane <br />Baton Rouge, LA<br />70816</h5>'
+    },
+    {
+      coords:{lat:30.283417,lng:-89.753687},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />1340 Lindberg Drive <br />Slidell, LA<br />70458</h5>'
+    },
+    {
+      coords:{lat:30.483915,lng:-90.461862},
+      iconImage:'',
+      content:'<h5><strong>Dog Haus</strong><br />500 West Minnesota Park Road <br />Hammond, LA<br />70403</h5>'
+    }
+
+  ];
+
+  for(var i = 0;i < markers.length;i++){
+    // Add marker
+    addMarker(markers[i]);
+  }
+
+  function addMarker(props){
+   var marker = new google.maps.Marker({
+     position:props.coords,
+     map:map,
+     //icon:props.iconImage
+   });
+
+   // Check for customicon
+   if(props.iconImage){
+     // Set icon image
+     marker.setIcon(props.iconImage);
+   }
+
+   // Check content
+   if(props.content){
+     var infoWindow = new google.maps.InfoWindow({
+       content:props.content
+     });
+
+     marker.addListener('click', function(){
+       infoWindow.open(map, marker);
+     });
+   }
+ }
+}
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGL0FZ24T6TZnJsAw17ZZL9oVvdL-XAd8&callback=initMap"
 async defer></script>

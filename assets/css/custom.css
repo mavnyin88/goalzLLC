@@ -169,6 +169,18 @@ li{
 }
 
 /*Custom bootstrap navbar */
+/*header{
+		position:absolute;
+    width: 100%;
+		top:-200px;
+}*/
+.navbar-fixed-top{
+	top:0;
+	transition: top 0.23s ease-in-out;
+}
+.nav-up {
+    top: -150px;
+}
 .navbar{
 	margin-bottom:0;
 }
@@ -669,10 +681,17 @@ a:hover{
 /* Our brands */
 #our-brands{
 	margin-top:80px;
+	background-color:#EE453B;
+	/*background-color:#F5EB9E;*/
 }
 #our-brands .row h1{
+	color:#F5EB9E;
 	font-family: "Tungsten-Medium";
+	margin-top:20px;
 	margin-bottom: 30px;
+}
+#our-brands .row h4,#our-brands .row p{
+	color:#fff;
 }
 #our-brands .row .col-sm-4 h4{
 	margin-bottom:20px;
@@ -717,6 +736,7 @@ a:hover{
 #dog_haus_hero .row h1{
 	font-family:Tungsten-Medium;
 	font-size:65px;
+	margin-top:20px;
 	color:#fff;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
@@ -762,6 +782,7 @@ a:hover{
 #captain_d_hero .row h1{
 	font-family:Tungsten-Medium;
 	font-size:65px;
+	margin-top:20px;
 	color:#fff;
 	text-shadow:2px 2px 2px rgba(0,0,0,0.7);
 }
