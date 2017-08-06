@@ -282,7 +282,7 @@ a.navbar-brand{
 	text-align:left;
 	margin:0;
 	letter-spacing:3px;
-	font-size:55px;
+	font-size:65px;
 }
 
 /* Custom bootsrap btn */
@@ -472,9 +472,9 @@ section#section-2 .row .col-sm-4 .overFlow img:hover, section#section-4 .row .co
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 991px){
-	#instructor .container {
-		background: rgba(255,255,255,0.8);
-	}
+
+
+
 }
 /* ipad */
 @media screen and (max-width: 768px){
@@ -497,10 +497,9 @@ section#section-2 .row .col-sm-4 .overFlow img:hover, section#section-4 .row .co
 	}
 
 }
-@media screen and (min-width: 768px)
-bootstrap.min.css:5
-.carousel-caption {
-}
+/*@media screen and (min-width: 768px){
+
+}*/
 
 
 
